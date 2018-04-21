@@ -1,0 +1,39 @@
+---
+title: "Easy Algorithms"
+author: "AJSS"
+date: "19-April-2018"
+output: ioslides_presentation
+---
+
+## Easy Algoriths
+
+This application has the objective of teaching about the functioning of 3 basic algorithms:
+- Binary search
+- Bubble sort
+- Quick sort
+The algorithms are diveded by section the links to the sections are in the navbar every section has a application and a instruction part.
+the link to the app is [here](https://ajss.shinyapps.io/simple_algorithms/) and link of the git repo for this presentation and the ui.R and server.R is [here](https://github.com/j11011/exam_data_prod)
+
+## Binary Search
+Binary search is a search algorithm, which has as input an ordered array and looks for a number in the array, this is done by cutting in half each time until finding the number a more broad explanation is [here](https://en.wikipedia.org/wiki/Binary_search_algorithm), in R the Binary search is applied with the function `binary_search` of the `Rfast` library, the function returns True or False depending if the number is in the array or not, here is a example
+```{r Binary search, message=FALSE, warning=FALSE}
+library(Rfast)
+print(binary_search(c(1,100),20))
+```
+
+In the app we have 3 inputs `Min value:` it is the minimum value of the array we will search,`Max value:` is the maximum value in the array we will search and `Value to find` it is the value to find.
+
+
+## Bubble sort
+Bubble sort is a simple and well-known sorting algorithm. It is used in practice once in a blue moon and its main application is to make an introduction to the sorting algorithms. Bubble sort belongs to O(n2) sorting algorithms, which makes it quite inefficient for sorting large data volumes. Bubble sort is stable and adaptive a more broad explanation about this algorithm is [here](https://en.wikipedia.org/wiki/Bubble_sort), 
+
+In the app we have 1 input called `Vector:` it is the vector that will be sorted this vector should be like this `3,4,1,7,9,0,10` i.e. just number that are comma separeted, I you inster a vector the app should return all the steps that bubble sort algorithm do in order to sort the vector
+
+
+
+## Quick sort
+Quicksort is a popular sorting algorithm that is often faster in practice compared to other sorting algorithms. It utilizes a divide-and-conquer strategy to quickly sort data items by dividing a large array into two smaller arrays  more broad explanation about this algorithm is [here](https://en.wikipedia.org/wiki/Quicksort) 
+
+In the app we have 1 input called `Vector:` it is the vector that will be sorted this vector should be like this `3,4,1,7,9,0,10` i.e. just number that are comma separeted, I you inster a vector the app should return all the steps that Quick sort algorithm do in order to sort the vector
+
+
