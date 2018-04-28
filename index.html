@@ -11,7 +11,7 @@
 
     <script>
       // 2. Start code here
-
+      <h1> 1234</h1>
       window.addEventListener('load', function() {
 
         // Checking if Web3 has been injected by the browser (Mist/MetaMask)
@@ -19,6 +19,8 @@
           // Use Mist/MetaMask's provider
           web3js = new Web3(web3.currentProvider);
           alert("Metamask installed");
+          var user_address = web3.eth.accounts[0];
+          console.log(user_address);
         } else {
           // Handle the case where the user doesn't have Metamask installed
           // Probably show them a message prompting them to install Metamask
